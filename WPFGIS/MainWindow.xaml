@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPFGIS.MainWindow"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:esri="http://schemas.esri.com/arcgis/client/2009"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+        <esri:Map x:Name="MyMap" UseAcceleratedDisplay="True" IsLogoVisible="False">
+            <esri:Map.Layers>
+                <esri:ArcGISDynamicMapServiceLayer ID="shaanximap"
+        Url="http://192.168.0.106:6080/arcgis/rest/services/ShaanXi/MapServer" />
+
+            </esri:Map.Layers>
+        </esri:Map>
+    </Grid>
+</Window>
+
+
+
